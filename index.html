@@ -82,10 +82,18 @@
     .detail:first-child{padding-top:0}.detail:last-child{border:0;padding-bottom:0}
     .detail dt{font-size:12px;color:var(--muted);font-weight:750}.detail dd{margin:0;font-weight:700}
     .overview-side{background:#EAF5FF;border:1px solid #D9E9FF;border-radius:var(--radius);padding:25px 27px;display:flex;flex-direction:column;justify-content:space-between}
-    .overview-side .heartline{font-size:13px;font-weight:900;color:var(--blue)}
-    .overview-side h3{font-size:24px;line-height:1.42;letter-spacing:-.045em;margin:10px 0 16px}
-    .values{display:flex;flex-wrap:wrap;gap:8px}
-    .values span{display:inline-block;background:#fff;padding:6px 12px;font-size:12px;font-weight:800;color:var(--blue);border-radius:99px;border:1px solid #D9E6FE}
+    .overview-side .heartline{font-size:13px;font-weight:900;color:var(--blue);text-align:center;letter-spacing:.045em}
+    .poster-preview{display:flex;flex-direction:column;gap:13px;align-items:center;justify-content:center}
+    .poster-preview .poster-link{display:block;width:fit-content;max-width:100%;border-radius:13px;overflow:hidden;background:#fff;line-height:0;box-shadow:0 12px 30px rgba(26,69,142,.17);transition:transform .2s ease,box-shadow .2s ease}
+    .poster-preview .poster-link:hover{transform:translateY(-3px);box-shadow:0 17px 35px rgba(26,69,142,.23)}
+    .poster-preview img{display:block;width:auto;max-width:100%;height:auto;max-height:345px;object-fit:contain}
+    .poster-hint{margin:0;font-size:12px;font-weight:750;color:#43699D;text-align:center}
+    .poster-hint .ico{width:15px;height:15px;margin-right:4px}
+    .poster-modal{background:transparent;border:0;padding:0;max-width:min(94vw,840px);max-height:94vh;overflow:visible;color:inherit}
+    .poster-modal::backdrop{background:rgba(12,28,52,.86);backdrop-filter:blur(5px)}
+    .poster-modal img{display:block;max-width:100%;max-height:88vh;width:auto;height:auto;object-fit:contain;margin:auto;border-radius:8px;box-shadow:0 18px 65px rgba(0,0,0,.32)}
+    .poster-close{position:absolute;z-index:2;right:-12px;top:-14px;width:38px;height:38px;border:0;border-radius:50%;background:#fff;color:#193154;box-shadow:0 3px 12px rgba(0,0,0,.3);font-size:25px;font-weight:700;display:grid;place-items:center;line-height:1}
+    .poster-close:hover{background:#EAF5FF}
     .value-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin-top:15px}
     .value-card{padding:20px;background:white;border-radius:18px;border:1px solid var(--line)}
     .value-card .circle{width:39px;height:39px;display:grid;place-items:center;background:#F0F5FF;border-radius:13px;color:var(--blue);margin-bottom:11px}
@@ -167,6 +175,7 @@
       .overview,.location-grid{grid-template-columns:1fr}
       .map-box{min-height:230px}.map-box iframe{min-height:230px}
       .overview-main,.overview-side{padding:22px}
+      .poster-preview img{max-height:520px}
       .value-cards{gap:8px}.value-card{padding:15px 11px}.value-card strong{font-size:13px}
       .value-card p{font-size:11px}
       .event-panel{padding:18px}.event-item{padding:13px}
@@ -294,7 +303,15 @@
           <div class="detail"><dt>규모</dt><dd>약 400명 (선착순 모집)</dd></div>
           <div class="detail"><dt>운영</dt><dd>경기도화성오산교육지원청</dd></div>
         </dl></div>
-        <div class="overview-side"><div><span class="heartline">TOGETHER, ONE MORE JUMP!</span><h3>잘 뛰는 것보다<br>함께 뛰는 마음이<br>더 빛나는 순간.</h3></div><div class="values"><span>#즐거운 참여</span><span>#용기 있는 도전</span><span>#따뜻한 응원</span></div></div>
+        <div class="overview-side">
+          <div class="poster-preview">
+            <span class="heartline">TOGETHER, ONE MORE JUMP!</span>
+            <a class="poster-link" id="posterOpen" href="poster-thumb.jpg" target="_blank" rel="noopener" aria-label="공식 포스터 크게 보기">
+              <img src="poster-thumb.jpg" alt="2026 화성오산 초등 교육가족 RAS 줄넘기 축제 공식 포스터. 10월 31일 토요일 오후 2시, 동탄여울공원 축구장" loading="lazy" width="1055" height="1491">
+            </a>
+            <p class="poster-hint">포스터를 누르면 크게 볼 수 있어요.</p>
+          </div>
+        </div>
       </div>
       <div class="value-cards">
         <div class="value-card"><span class="circle"><svg class="ico" aria-hidden="true"><use href="#i-star"/></svg></span><strong>나에게 도전!</strong><p>자신의 목표를 향해 한 번 더 뛰어봐요.</p></div>
@@ -402,15 +419,30 @@
     <a href="#apply"><svg class="ico" aria-hidden="true"><use href="#i-form"/></svg><span>참가 신청</span></a>
   </div></nav>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <dialog class="poster-modal" id="posterModal" aria-label="줄넘기 축제 공식 포스터 확대 이미지">
+    <button type="button" class="poster-close" id="posterClose" aria-label="포스터 닫기">×</button>
+    <img src="poster-thumb.jpg" alt="2026 화성오산 초등 교육가족 RAS 줄넘기 축제 공식 포스터" width="1055" height="1491">
+  </dialog>
 
   <script>
   /* ==========================================================
      참가 신청 폼 연결: 아래 따옴표 안에 구글 폼 신청 주소만 넣으세요.
-     예) const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/1K1n5ns4R6FBeXazHKUgeb0A2iVNGETWDcCy1zf-3qNg/edit';
+     예) const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/.../viewform';
      ========================================================== */
   const GOOGLE_FORM_URL = '';
 
   (() => {
+    // 포스터는 축제 안내의 하늘색 영역에서 선택하여 크게 볼 수 있습니다.
+    const posterLink = document.getElementById('posterOpen');
+    const posterModal = document.getElementById('posterModal');
+    posterLink.addEventListener('click', event => {
+      if (typeof posterModal.showModal !== 'function') return; // 구형 브라우저는 JPG 새 탭으로 열기
+      event.preventDefault();
+      posterModal.showModal();
+    });
+    document.getElementById('posterClose').addEventListener('click', () => posterModal.close());
+    posterModal.addEventListener('click', event => {if (event.target === posterModal) posterModal.close();});
+
     const toastEl = document.getElementById('toast');
     let toastTimer;
     function toast(message) {
