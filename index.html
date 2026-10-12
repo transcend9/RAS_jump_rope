@@ -1,370 +1,517 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>2026 화성오산 초등 교육가족 RAS 줄넘기 축제</title>
-<meta property="og:type" content="website">
-<meta property="og:title" content="2026 화성오산 초등 교육가족 RAS 줄넘기 축제">
-<meta property="og:description" content="함께 뛰는 즐거움, 다시 도전하는 용기! | 2026.10.31.(토) 14:00 동탄여울공원 축구장">
-<meta property="og:image" content="https://slogging-festa.vercel.app/poster-thumb.jpg">
-<meta property="og:url" content="https://slogging-festa.vercel.app/">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Do+Hyeon&family=Outfit:wght@800&display=swap" rel="stylesheet">
-<style>
-
-:root{--bg:#F6F7F2;--card:#FFF;--ink:#243B32;--sub:#66756D;--main:#287052;--accent:#174D38;--line:#E3E8DF;--soft:#EDF3E8;--green:#287052;--hero1:#245D45;--hero2:#123D2D;--hero-text:#FFFFFF;--radius:20px}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:24px}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:"Gowun Dodum","Apple SD Gothic Neo","Malgun Gothic",sans-serif;line-height:1.7;padding-bottom:calc(86px + env(safe-area-inset-bottom,0px))}
-a{color:inherit}
-button,summary,a{-webkit-tap-highlight-color:transparent}
-button{font:inherit}
-.wrap{max-width:640px;margin:0 auto;padding:0 24px}
-.icon{width:20px;height:20px;display:inline-block;vertical-align:-4px;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
-.top-box{width:calc(100% - 24px);max-width:640px;margin:16px auto 0;background:var(--card);border:1px solid var(--line);border-radius:28px;overflow:hidden;box-shadow:0 12px 40px rgba(24,62,43,.06)}
-.hero{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(145deg,var(--hero1),var(--hero2));color:var(--hero-text);padding:24px 0 55px}
-.hero-track{position:absolute;right:-125px;top:35px;width:420px;height:400px;opacity:.13;pointer-events:none;z-index:-1;transform:rotate(-18deg)}
-header{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:30px;font-size:12px;letter-spacing:.03em}
-.organizer{color:#F0F6ED;display:inline-block;border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:5px 11px;background:rgba(255,255,255,.06)}
-.top-right{display:flex;align-items:center}
-.share-btn{width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.28);background:transparent;color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0;transition:background .2s ease}
-.share-btn:hover{background:rgba(255,255,255,.12)}
-.share-btn svg{width:18px;height:18px}
-.hero small{font-size:14px;color:#DCE9DE;letter-spacing:.06em}
-h1,h2,h3,.nums b,.course .km{font-family:"Do Hyeon","Gowun Dodum",sans-serif;font-weight:400}
-.hero h1{font-size:clamp(30px,7.7vw,46px);line-height:1.35;margin:10px 0 14px;letter-spacing:-.025em}
-.hero-title{display:inline;max-width:100%;color:#fff}
-.ras,.hero-title .ras-box{display:inline-block;white-space:nowrap;background:#fff;border-radius:.28em;padding:0 .22em;line-height:1.25;font-family:"Outfit","Do Hyeon",sans-serif;font-weight:800;letter-spacing:0;vertical-align:baseline}
-.ras i{font-style:normal}
-.ras i:nth-child(1),.hero-title .title-r{color:#1E6FD9}
-.ras i:nth-child(2),.hero-title .title-a{color:#E5393B}
-.ras i:nth-child(3),.hero-title .title-s{color:#2E9E4F}
-.hero .slogan{font-size:16px;font-weight:400;color:#F1F6EC;letter-spacing:.015em}
-.hero p{font-size:14px;color:#DCE9DE;line-height:1.8;margin:20px 0 0;max-width:440px}
-.top-body{padding:0 24px 24px}
-.nums{position:relative;display:grid;grid-template-columns:1.25fr 1fr 1fr;margin-top:-24px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 0;box-shadow:0 8px 20px rgba(24,62,43,.04)}
-.nums div{text-align:center;padding:0 8px;display:flex;flex-direction:column;justify-content:center;gap:2px;min-width:0}
-.nums div+div{border-left:1px solid var(--line)}
-.nums b{display:block;font-size:26px;line-height:1.3;color:var(--accent)}
-.nums span{font-size:12px;color:var(--sub)}
-.btns{display:grid;gap:10px;margin-top:20px}
-.btn{display:flex;justify-content:center;align-items:center;gap:8px;width:100%;text-align:center;padding:14px 12px;border-radius:12px;font-size:14px;font-weight:700;text-decoration:none;border:1px solid var(--line);color:var(--accent);background:#fff;transition:background .2s,border-color .2s,transform .2s}
-.btn:hover{background:#F2F6EF;border-color:#B8CABC}
-.btn:active{transform:translateY(1px)}
-.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff;font-size:16px;padding:16px 12px}
-.btn.primary:hover{background:#216044}
-.btn.volunteer{border-color:#B4C7B9;background:#fff;color:var(--accent)}
-.quick-links{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.quick-links .btn{color:var(--sub);border-color:transparent;background:#F4F6F1;font-size:13px;padding:11px 8px}
-.apply-fold summary{list-style:none;cursor:pointer}
-.apply-fold summary::-webkit-details-marker{display:none}
-.apply-fold .arrow{display:inline-block;transition:transform .2s}
-.apply-fold[open] .arrow{transform:rotate(180deg)}
-.apply-choices{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
-.apply-choices .btn{background:var(--soft);border-color:var(--soft);font-size:13px}
-section{padding:40px 0 0;scroll-margin-top:20px}
-h2{font-size:24px;line-height:1.3;color:var(--accent);margin:0 0 16px;letter-spacing:-.02em}
-.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;margin-bottom:12px}
-.card:last-child{margin-bottom:0}
-.card> b{font-size:16px;font-weight:700}
-dl{margin:0}
-.row{display:flex;gap:16px;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px}
-.row:first-child{padding-top:0}
-.row:last-child{border:0;padding-bottom:0}
-.row dt{width:72px;flex-shrink:0;color:var(--sub);font-size:13px}
-.row dd{margin:0;flex:1;min-width:0;font-weight:400;overflow-wrap:anywhere}
-ul{margin:10px 0 0;padding-left:20px;font-size:14px}
-li+li{margin-top:5px}
-.note{background:#EDF3E8;border-color:#DDE8D6;font-size:14px;line-height:1.9}
-.note b{color:var(--accent)}
-.course-top{display:flex;gap:18px;align-items:center}
-.course .km{font-size:32px;line-height:1.3;color:var(--accent);min-width:65px}
-.course h3{margin:0;font-size:20px;line-height:1.4}
-.course p{margin:4px 0 0;font-size:13px;color:var(--sub)}
-.course-img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;margin:18px 0 0}
-#poster img{border-radius:16px;border:1px solid var(--line);box-shadow:0 8px 26px rgba(24,62,43,.05)}
-.timeline{list-style:none;padding:0;margin:0}
-.timeline li{position:relative;display:grid;grid-template-columns:106px minmax(0,1fr);gap:18px;padding:0 0 25px 20px;margin:0}
-.timeline li::before{content:"";position:absolute;left:3px;top:9px;bottom:-9px;width:1px;background:#DCE6D9}
-.timeline li::after{content:"";position:absolute;left:0;top:8px;width:7px;height:7px;border-radius:50%;background:var(--main);box-shadow:0 0 0 4px #EFF4EB}
-.timeline li:last-child{padding-bottom:0}
-.timeline li:last-child::before{display:none}
-.timeline time{font-family:"Outfit","Malgun Gothic",sans-serif;font-size:13px;font-weight:600;color:var(--accent);padding-top:2px;white-space:nowrap}
-.timeline-content{font-size:14px;min-width:0}
-.ev+.ev{margin-top:5px}
-.meeting{display:flex;align-items:flex-start;gap:10px;background:#EDF3E8;color:var(--accent);border-radius:12px;padding:13px 14px;margin:16px 0 20px;font-size:14px}
-.meeting small{display:block;color:var(--sub);font-size:12px;margin-top:3px}
-#where .place-name{font-family:"Do Hyeon",sans-serif;font-size:22px;color:var(--accent)}
-#where .address{display:block;font-size:12px;color:var(--sub);margin-top:4px}
-#where .row dt{width:83px}
-#where .row dt .icon{width:16px;height:16px;margin-right:5px;vertical-align:-3px}
-.travel-note{margin:18px 0 0;padding:12px 14px;border-radius:12px;font-size:13px;color:var(--sub)}
-.map-frame{margin-top:20px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--soft)}
-.map-frame iframe{display:block}
-.contact-number{display:inline-flex;align-items:center;gap:7px;text-decoration:none;color:var(--accent);font-family:"Outfit",sans-serif;font-size:20px;font-weight:600;margin-top:8px}
-footer{padding:36px 0 24px;font-size:12px;color:var(--sub);text-align:center;line-height:1.9}
-nav{position:fixed;left:0;right:0;bottom:0;z-index:40;background:rgba(255,255,255,.96);border-top:1px solid var(--line);display:flex;justify-content:center;padding:9px 6px calc(9px + env(safe-area-inset-bottom,0px));backdrop-filter:blur(14px)}
-nav a{width:20%;max-width:128px;display:flex;flex-direction:column;align-items:center;gap:5px;font-size:11px;color:var(--sub);text-decoration:none;padding:4px 0;border-radius:10px}
-nav a .icon{width:21px;height:21px}
-nav a.active{color:var(--accent);background:#EEF3E9}
-a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #B3CBA2;outline-offset:4px}
-.toast{position:fixed;left:50%;bottom:calc(92px + env(safe-area-inset-bottom,0px));transform:translateX(-50%) translateY(12px);background:var(--accent);color:#fff;font-size:13px;padding:10px 18px;border-radius:999px;z-index:60;pointer-events:none;opacity:0;transition:opacity .2s,transform .2s;max-width:calc(100% - 32px);width:max-content;text-align:center}
-.toast.show{transform:translateX(-50%) translateY(0);opacity:1}
-#splash{position:fixed;inset:0;z-index:100;background:linear-gradient(145deg,var(--hero1),var(--hero2));color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;transition:opacity .8s ease,visibility .8s ease}
-#splash.fade-out{opacity:0;visibility:hidden;pointer-events:none}
-#splash .y{font-family:'Outfit',sans-serif;font-size:clamp(48px,14vw,72px);font-weight:800;letter-spacing:-.02em;line-height:1;margin-bottom:4px;background:linear-gradient(135deg,#fff 30%,#CDEFFF 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:introFadeInDown .6s ease .2s both}
-#splash h1{font-size:34px;line-height:1.3;margin:8px 0 0;font-weight:400;min-height:2.6em}
-#splash .s{font-size:17px;font-weight:700;color:#CDEFFF;margin-top:10px;min-height:1.6em}
-#splash .cur{display:inline-block;width:3px;font-size:28px;font-weight:300;color:#CDEFFF;margin-top:4px;animation:introBlink .8s step-end infinite}
-#splash .cur.hidden{display:none}
-#splash .em{font-size:38px;margin-top:34px;display:flex;gap:14px}
-#splash .em span{display:inline-block;opacity:0;animation:pop .5s ease forwards}
-#splash .em span:nth-child(1){animation-delay:.3s}#splash .em span:nth-child(2){animation-delay:.5s}#splash .em span:nth-child(3){animation-delay:.7s}#splash .em span:nth-child(4){animation-delay:.9s}#splash .em span:nth-child(5){animation-delay:1.1s}
-@keyframes pop{from{opacity:0;transform:translateY(14px) scale(.8)}to{opacity:1;transform:none}}
-@keyframes introFadeInDown{from{opacity:0;transform:translateY(-16px)}to{opacity:1;transform:translateY(0)}}
-@keyframes introBlink{0%,100%{opacity:1}50%{opacity:0}}
-@media (prefers-reduced-motion:reduce){#splash .y,#splash .cur{animation:none}#splash .em span{animation:none;opacity:1}}
-#splash .ras{border-radius:.4em}
-#splash .s{font-family:"Do Hyeon","Gowun Dodum","Apple SD Gothic Neo","Malgun Gothic",sans-serif;font-weight:400}
-@media(max-width:380px){.wrap{padding:0 18px}.top-body{padding:0 18px 20px}.card{padding:18px}.hero h1{font-size:29px}.nums b{font-size:23px}.nums span{font-size:11px}.organizer{font-size:11px;padding:5px 8px}.timeline li{grid-template-columns:1fr;gap:4px}.row{gap:12px}#where .row{display:block}#where .row dt{width:auto;margin-bottom:7px}.apply-choices .btn{font-size:12px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}#splash{display:none}}
-
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#2764E7">
+  <meta name="description" content="함께 뛰는 즐거움, 다시 도전하는 용기! 2026 화성오산 초등 교육가족 RAS 줄넘기 축제. 10월 31일 토요일 오후 2시, 동탄여울공원 축구장.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="2026 화성오산 초등 교육가족 RAS 줄넘기 축제">
+  <meta property="og:description" content="함께 뛰는 즐거움, 다시 도전하는 용기! | 2026. 10. 31.(토) 14:00 | 동탄여울공원 축구장">
+  <meta name="twitter:card" content="summary">
+  <title>2026 화성오산 초등 교육가족 RAS 줄넘기 축제</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <style>
+    :root {
+      --blue:#2764E7;--blue-deep:#1746B8;--orange:#FF7043;--yellow:#FFD166;
+      --ink:#1D2B45;--muted:#64738C;--pale:#EAF5FF;--surface:#F6F9FE;
+      --line:#E2E9F4;--white:#fff;--radius:22px;--shadow:0 12px 35px rgba(37,74,143,.065);
+    }
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:25px}
+    body{margin:0;background:var(--surface);color:var(--ink);font-family:Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;line-height:1.65;word-break:keep-all;padding-bottom:calc(94px + env(safe-area-inset-bottom,0px))}
+    button,a{font:inherit;-webkit-tap-highlight-color:transparent}
+    button{cursor:pointer}
+    a{color:inherit}
+    a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+    .shell{width:min(100% - 40px,1000px);margin-inline:auto}
+    .ico{width:20px;height:20px;flex:0 0 auto;display:inline-block;vertical-align:middle;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+    .page-top{background:#fff;border-bottom:1px solid var(--line)}
+    .site-head{min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:inline-flex;gap:10px;align-items:center;text-decoration:none;min-width:0}
+    .brand-mark{width:38px;height:38px;border-radius:12px;background:var(--blue);color:white;display:grid;place-items:center;box-shadow:0 5px 12px rgba(39,100,231,.2)}
+    .brand-mark .ico{width:22px;height:22px}
+    .brand-label{display:flex;flex-direction:column;line-height:1.3}
+    .brand-label strong{font-size:13px;letter-spacing:-.02em}
+    .brand-label small{font-size:10px;letter-spacing:.09em;color:var(--muted);font-weight:700}
+    .share{display:inline-flex;gap:7px;align-items:center;background:#F1F5FC;border:1px solid var(--line);border-radius:999px;color:var(--ink);font-weight:700;font-size:12px;padding:8px 12px}
+    .share .ico{width:16px;height:16px}
+    .hero-shell{background:#fff;padding-bottom:24px}
+    .hero{position:relative;isolation:isolate;background:linear-gradient(123deg,#2465EC 0%,#2764E7 47%,#1746B8 100%);border-radius:0 0 32px 32px;color:#fff;overflow:hidden;box-shadow:0 18px 35px rgba(28,78,172,.13)}
+    .hero::before{content:"";position:absolute;width:440px;height:440px;border:1px solid rgba(255,255,255,.1);border-radius:50%;top:-285px;right:-75px;box-shadow:0 0 0 62px rgba(255,255,255,.025),0 0 0 123px rgba(255,255,255,.025);pointer-events:none}
+    .hero::after{content:"";position:absolute;width:360px;height:360px;border-radius:50%;background:rgba(255,255,255,.035);bottom:-290px;left:-125px;pointer-events:none}
+    .hero-inner{position:relative;display:grid;grid-template-columns:minmax(0,1.18fr) minmax(310px,.82fr);align-items:center;gap:18px;padding:66px 12px 68px}
+    .hero-copy{position:relative;z-index:2}
+    .eyebrow{display:inline-flex;gap:8px;align-items:center;font-size:11px;font-weight:800;letter-spacing:.10em}
+    .hero-kicker{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.27);padding:7px 13px;border-radius:99px;color:#fff;letter-spacing:.02em}
+    .hero-slogan{margin:25px 0 12px;color:#FFE28A;font-size:clamp(15px,2vw,20px);font-weight:800;letter-spacing:-.035em}
+    .hero h1{font-size:clamp(34px,4.25vw,58px);line-height:1.23;font-weight:900;letter-spacing:-.055em;margin:0}
+    .hero h1 .highlight{display:block;color:#fff}
+    .ras{display:inline-block;letter-spacing:-.06em;font-weight:900}
+    .hero-desc{margin:18px 0 0;line-height:1.8;color:#E3ECFF;font-size:clamp(13px,1.8vw,15px)}
+    .hero-meta{margin-top:25px;display:flex;flex-wrap:wrap;gap:12px 20px;color:#fff;font-weight:700;font-size:13px}
+    .hero-meta span{display:inline-flex;align-items:center;gap:8px}
+    .hero-meta .ico{width:17px;height:17px;color:#FFE28A}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+    .action{min-height:50px;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 23px;border:0;border-radius:14px;text-decoration:none;font-weight:800;font-size:14px;transition:transform .18s,background .18s,box-shadow .18s}
+    .action:hover{transform:translateY(-2px)}
+    .action-primary{color:#59280D;background:var(--yellow);box-shadow:0 8px 22px rgba(15,37,87,.14)}
+    .action-ghost{color:#fff;border:1px solid rgba(255,255,255,.4);background:rgba(255,255,255,.085)}
+    .action .ico{width:17px;height:17px}
+    .illustration{align-self:center;min-width:0;position:relative;z-index:1;filter:drop-shadow(0 18px 18px rgba(6,30,104,.11))}
+    .illustration svg{width:100%;height:auto;display:block;overflow:visible}
+    .quick-facts{position:relative;margin-top:-33px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;z-index:3}
+    .fact{display:flex;align-items:center;gap:13px;min-height:89px;border:1px solid var(--line);border-radius:18px;padding:17px 19px;background:white;box-shadow:var(--shadow)}
+    .fact-icon{display:grid;place-items:center;width:43px;height:43px;flex:0 0 43px;border-radius:13px;background:#E8F0FF;color:var(--blue)}
+    .fact:nth-child(2) .fact-icon{background:#FFF0E9;color:#EC643A}.fact:nth-child(3) .fact-icon{background:#FFF7D9;color:#977315}
+    .fact-icon .ico{width:22px;height:22px}
+    .fact-label{font-size:11px;font-weight:750;color:var(--muted);display:block;margin-bottom:2px}
+    .fact-value{font-size:16px;font-weight:850;line-height:1.4;letter-spacing:-.045em}
+    main{padding-top:18px}
+    section{padding:54px 0 0;scroll-margin-top:14px}
+    .section-heading{margin-bottom:22px}
+    .section-label{display:block;font-size:12px;letter-spacing:.11em;color:var(--blue);font-weight:900;margin-bottom:6px}
+    h2{font-size:clamp(25px,4vw,32px);letter-spacing:-.055em;line-height:1.35;margin:0;font-weight:900}
+    .section-description{color:var(--muted);font-size:14px;margin:9px 0 0}
+    .panel{background:white;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .overview{display:grid;grid-template-columns:1.05fr .95fr;gap:15px}
+    .overview-main{padding:25px 27px}
+    .overview-main dl{margin:0}
+    .detail{display:grid;grid-template-columns:85px 1fr;gap:12px;padding:13px 0;border-bottom:1px solid var(--line);font-size:14px}
+    .detail:first-child{padding-top:0}.detail:last-child{border:0;padding-bottom:0}
+    .detail dt{font-size:12px;color:var(--muted);font-weight:750}.detail dd{margin:0;font-weight:700}
+    .overview-side{background:#EAF5FF;border:1px solid #D9E9FF;border-radius:var(--radius);padding:25px 27px;display:flex;flex-direction:column;justify-content:space-between}
+    .overview-side .heartline{font-size:13px;font-weight:900;color:var(--blue)}
+    .overview-side h3{font-size:24px;line-height:1.42;letter-spacing:-.045em;margin:10px 0 16px}
+    .values{display:flex;flex-wrap:wrap;gap:8px}
+    .values span{display:inline-block;background:#fff;padding:6px 12px;font-size:12px;font-weight:800;color:var(--blue);border-radius:99px;border:1px solid #D9E6FE}
+    .value-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin-top:15px}
+    .value-card{padding:20px;background:white;border-radius:18px;border:1px solid var(--line)}
+    .value-card .circle{width:39px;height:39px;display:grid;place-items:center;background:#F0F5FF;border-radius:13px;color:var(--blue);margin-bottom:11px}
+    .value-card:nth-child(2) .circle{color:#E2603A;background:#FFF1EB}.value-card:nth-child(3) .circle{color:#977315;background:#FFF8DF}
+    .value-card strong{font-size:15px;display:block;letter-spacing:-.02em}.value-card p{color:var(--muted);font-size:12px;line-height:1.65;margin:6px 0 0}
+    .tabs{display:flex;gap:8px;background:#E9F0FB;border-radius:16px;padding:6px;margin-bottom:15px}
+    .tab{width:33.333%;border:0;background:transparent;border-radius:12px;font-weight:800;color:#536783;padding:11px 10px;font-size:14px;transition:background .2s,color .2s,box-shadow .2s}
+    .tab[aria-selected="true"]{color:var(--blue);background:white;box-shadow:0 2px 9px rgba(39,74,135,.09)}
+    .event-panel{padding:24px}
+    .event-panel[hidden]{display:none}
+    .event-top{display:flex;align-items:flex-start;justify-content:space-between;gap:15px;margin-bottom:19px}
+    .event-top h3{font-size:20px;letter-spacing:-.035em;margin:0;line-height:1.45}
+    .event-top p{margin:5px 0 0;color:var(--muted);font-size:13px}
+    .event-count{background:#EAF1FF;color:var(--blue);font-weight:850;font-size:12px;padding:7px 11px;border-radius:99px;white-space:nowrap}
+    .events-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .event-item{display:flex;gap:12px;align-items:flex-start;background:#F7F9FD;border:1px solid #E9EFF8;border-radius:15px;padding:16px}
+    .event-number{display:grid;place-items:center;width:30px;height:30px;border-radius:10px;background:#E7F0FF;color:var(--blue);font-size:12px;font-weight:900;flex:0 0 30px}
+    .event-name{font-size:14px;line-height:1.55;font-weight:850;letter-spacing:-.035em}
+    .event-desc{font-size:12px;color:var(--muted);margin:4px 0 0;line-height:1.6}
+    .event-time{display:inline-block;font-size:11px;font-weight:900;color:#D85932;background:#FFF0E9;padding:3px 8px;border-radius:6px;margin-top:8px}
+    .event-note{display:flex;gap:9px;align-items:flex-start;background:#EFF5FF;color:#476189;border-radius:12px;padding:12px 14px;font-size:12px;line-height:1.7;margin-top:16px}
+    .event-note .ico{width:17px;height:17px;color:var(--blue);margin-top:1px}
+    .rules{margin-top:15px;padding:21px 24px}
+    .rules h3{margin:0 0 12px;font-size:16px;letter-spacing:-.03em}
+    .rule-list{display:grid;grid-template-columns:1fr 1fr;gap:9px 20px;list-style:none;padding:0;margin:0}
+    .rule-list li{position:relative;padding-left:16px;color:#41536F;font-size:12px;line-height:1.65}
+    .rule-list li:before{content:"";position:absolute;left:1px;top:9px;width:6px;height:6px;border-radius:50%;background:var(--orange)}
+    .schedule-card{padding:27px 28px}
+    .timeline{list-style:none;margin:0;padding:0}
+    .timeline li{position:relative;display:grid;grid-template-columns:135px 1fr;gap:18px;padding:0 0 25px 27px;min-height:55px}
+    .timeline li::before{content:"";position:absolute;left:6px;top:13px;bottom:-5px;width:2px;background:#E2EAF8}
+    .timeline li::after{content:"";position:absolute;left:0;top:8px;width:14px;height:14px;border-radius:50%;background:white;border:4px solid var(--blue);box-shadow:0 0 0 3px #EEF4FF}
+    .timeline li:nth-child(3)::after,.timeline li:nth-child(4)::after,.timeline li:nth-child(6)::after{border-color:var(--orange)}
+    .timeline li:last-child{padding-bottom:0}.timeline li:last-child::before{display:none}
+    .timeline time{font-size:13px;font-weight:850;letter-spacing:-.02em;color:var(--blue);padding-top:2px;white-space:nowrap}
+    .timeline strong{display:block;font-size:14px;letter-spacing:-.02em}
+    .timeline p{font-size:12px;color:var(--muted);margin:3px 0 0}
+    .schedule-hint{margin:16px 0 0;font-size:12px;color:var(--muted)}
+    .location-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:15px}
+    .location-info{padding:24px;display:flex;flex-direction:column;justify-content:space-between}
+    .location-info h3{font-size:23px;letter-spacing:-.04em;margin:8px 0 9px}
+    .location-info p{font-size:13px;color:var(--muted);margin:0}
+    .location-kicker{color:var(--blue);font-weight:900;font-size:11px;letter-spacing:.04em}
+    .location-links{margin-top:25px;display:flex;gap:8px;flex-wrap:wrap}
+    .map-link{display:inline-flex;align-items:center;gap:7px;padding:11px 13px;border-radius:12px;border:1px solid var(--line);background:#F6F9FF;text-decoration:none;font-size:12px;font-weight:850;color:var(--ink)}
+    .map-link .ico{width:16px;height:16px;color:var(--blue)}
+    .map-box{position:relative;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#EAF3FE;min-height:275px}
+    .map-box iframe{width:100%;height:100%;min-height:275px;display:block;border:0}
+    .location-note{font-size:12px;color:var(--muted);margin:13px 0 0}
+    .apply-card{position:relative;padding:33px;overflow:hidden;background:linear-gradient(115deg,#FFF 45%,#F0F6FF);border:1px solid #DCE8FA}
+    .apply-card::after{content:"";position:absolute;width:180px;height:180px;right:-75px;top:-80px;border:28px solid rgba(39,100,231,.06);border-radius:50%;pointer-events:none}
+    .apply-title{display:inline-flex;align-items:center;gap:9px;font-weight:900;color:var(--blue);font-size:13px}
+    .apply-card h3{font-size:clamp(22px,3vw,28px);letter-spacing:-.045em;line-height:1.4;margin:10px 0 8px}
+    .apply-card p{font-size:13px;color:var(--muted);margin:0 0 20px}
+    .apply-meta{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:21px}
+    .apply-meta span{font-size:12px;font-weight:800;background:#fff;border:1px solid #DFE9F7;border-radius:9px;padding:8px 11px}
+    .apply-button{border:0;background:var(--orange);color:#fff;padding:13px 24px;border-radius:13px;font-size:14px;font-weight:900;display:inline-flex;align-items:center;gap:8px;box-shadow:0 8px 17px rgba(255,112,67,.18)}
+    .apply-button .ico{width:17px;height:17px}
+    .pending{display:block;color:#7B879B;font-size:12px;margin-top:11px}
+    .contact{font-size:12px;color:var(--muted);margin:18px 0 0}.contact a{font-weight:800;color:var(--blue);text-decoration:none}
+    footer{padding:48px 0 25px;text-align:center;color:#8390A6;font-size:11px;line-height:1.9}
+    .bottom-nav{position:fixed;z-index:50;bottom:0;left:0;right:0;background:rgba(255,255,255,.97);border-top:1px solid #DFE6F0;box-shadow:0 -7px 28px rgba(15,40,87,.045);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding:8px max(7px,env(safe-area-inset-right,0px)) calc(8px + env(safe-area-inset-bottom,0px)) max(7px,env(safe-area-inset-left,0px))}
+    .nav-items{max-width:800px;margin:auto;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:2px}
+    .bottom-nav a{min-width:0;border-radius:11px;display:flex;gap:4px;flex-direction:column;align-items:center;justify-content:center;text-decoration:none;min-height:57px;color:#7D8BA2;font-size:10px;font-weight:800;white-space:nowrap;line-height:1.25;transition:background .18s,color .18s}
+    .bottom-nav a .ico{width:21px;height:21px;stroke-width:1.8}
+    .bottom-nav a.active{color:var(--blue);background:#EDF3FF}
+    .toast{position:fixed;z-index:100;bottom:calc(91px + env(safe-area-inset-bottom,0px));left:50%;transform:translate(-50%,12px);opacity:0;pointer-events:none;background:#213655;color:white;border-radius:99px;padding:12px 20px;font-size:12px;text-align:center;max-width:calc(100% - 32px);width:max-content;transition:opacity .2s,transform .2s;box-shadow:0 9px 26px #172E5E2b}
+    .toast.show{opacity:1;transform:translate(-50%,0)}
+    @media(min-width:1050px){.hero{border-radius:0 0 36px 36px}}
+    @media(max-width:760px){
+      .shell{width:min(100% - 36px,640px)}
+      .hero-inner{grid-template-columns:1fr;padding:40px 4px 52px;gap:0}
+      .hero-slogan{margin-top:21px}.hero h1{font-size:clamp(35px,7.2vw,49px)}
+      .illustration{width:min(370px,90%);justify-self:center;margin:5px auto -24px}
+      .hero-actions{margin-top:22px}
+      .quick-facts{gap:7px}.fact{padding:12px 10px;gap:7px;min-height:86px;flex-direction:column;text-align:center}
+      .fact-icon{width:30px;height:30px;flex-basis:30px;border-radius:9px}.fact-icon .ico{width:16px;height:16px}
+      .fact-label{font-size:10px}.fact-value{font-size:12px}
+      .overview,.location-grid{grid-template-columns:1fr}
+      .map-box{min-height:230px}.map-box iframe{min-height:230px}
+      .overview-main,.overview-side{padding:22px}
+      .value-cards{gap:8px}.value-card{padding:15px 11px}.value-card strong{font-size:13px}
+      .value-card p{font-size:11px}
+      .event-panel{padding:18px}.event-item{padding:13px}
+    }
+    @media(max-width:480px){
+      .shell{width:calc(100% - 30px)}
+      .hero{border-radius:0 0 25px 25px}
+      .hero h1{font-size:clamp(33px,8.3vw,43px)}
+      .hero-meta{flex-direction:column;gap:7px;margin-top:18px}
+      .hero-actions{gap:8px}.hero-actions .action{padding:12px 16px;font-size:13px;min-height:45px}
+      section{padding-top:44px}
+      .events-grid{grid-template-columns:1fr;gap:8px}
+      .event-item{align-items:center}
+      .event-time{margin-top:5px}
+      .event-top h3{font-size:18px}
+      .event-top p{font-size:12px}
+      .rule-list{grid-template-columns:1fr;gap:7px}
+      .schedule-card{padding:23px 18px}
+      .timeline li{grid-template-columns:99px 1fr;gap:8px;padding-left:22px;padding-bottom:21px}
+      .timeline time{font-size:11px}.timeline strong{font-size:13px}
+      .apply-card{padding:25px 20px}
+      .bottom-nav a{font-size:9px;gap:5px}.bottom-nav a .ico{width:20px;height:20px}
+    }
+    @media(max-width:350px){.nav-items{gap:0}.bottom-nav a{font-size:8px}.hero h1{font-size:32px}.fact-value{font-size:11px}.brand-label strong{font-size:11px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+  </style>
 </head>
 <body>
-<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true" style="position:absolute;overflow:hidden"><defs><symbol id="icon-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1Z"/></symbol><symbol id="icon-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7h.01"/></symbol><symbol id="icon-run" viewBox="0 0 24 24"><circle cx="16" cy="4" r="2"/><path d="m5 10 4-3 5 3 4 1 3-3M9 7l-2 7 5 2-3 6M7 14l-4 6M14 10l-1 4 5 4"/></symbol><symbol id="icon-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M7 3v4M17 3v4M3 10h18M8 14h2M14 14h2M8 17h2"/></symbol><symbol id="icon-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol><symbol id="icon-bus" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="16" rx="3"/><path d="M5 10h14M8 19v2M16 19v2M8 15h.01M16 15h.01M9 6h6"/></symbol><symbol id="icon-car" viewBox="0 0 24 24"><path d="m5 8 2-5h10l2 5M3 9h18v9H3zM5 18v3M19 18v3M6 13h2M16 13h2"/></symbol><symbol id="icon-parking" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M10 17V7h3a3 3 0 0 1 0 6h-3"/></symbol><symbol id="icon-phone" viewBox="0 0 24 24"><path d="M7 3H4a1 1 0 0 0-1 1c0 9 8 17 17 17a1 1 0 0 0 1-1v-3l-5-2-2 2a16 16 0 0 1-7-7l2-2Z"/></symbol><symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol><symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol><symbol id="icon-heart" viewBox="0 0 24 24"><path d="M20 5a5 5 0 0 0-8 1 5 5 0 0 0-8-1C0 10 6 16 12 21c6-5 12-11 8-16Z"/></symbol><symbol id="icon-medal" viewBox="0 0 24 24"><circle cx="12" cy="15" r="6"/><path d="m8 10-4-7h5l3 6 3-6h5l-4 7M12 12v6M9 15h6"/></symbol></defs></svg>
-<div id="splash" aria-hidden="true">
-  <div class="y">2026</div>
-  <h1 id="introTitle"></h1>
-  <div class="s" id="introSubtitle"></div>
-  <div class="cur" id="introCursor">|</div>
-  <div class="em"><span>🚶</span><span>🏃</span><span>👟</span><span>🌿</span><span>🏅</span></div>
-</div>
-<div class="top-box">
-<div class="hero" id="home">
-<svg class="hero-track" viewBox="0 0 420 400" fill="none" aria-hidden="true"><rect x="36" y="22" width="278" height="350" rx="139" stroke="white"/><rect x="53" y="39" width="244" height="316" rx="122" stroke="white"/><rect x="70" y="56" width="210" height="282" rx="105" stroke="white"/><rect x="87" y="73" width="176" height="248" rx="88" stroke="white"/></svg>
-  <div class="wrap">
-    <header>
-      <span class="organizer">화성오산교육지원청 · 2026</span>
-      <span class="top-right"><button type="button" id="shareBtn" class="share-btn" title="공유하기" aria-label="공유하기"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M8 7l4-4 4 4"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg></button></span></header>
-    <small>2026 화성오산 초등 교육가족</small>
-    <h1>
-  <span class="hero-title"><span class="ras-box"><span class="title-r">R</span><span class="title-a">A</span><span class="title-s">S</span></span> RAS 줄넘기 축제</span>
-</h1>
-    <div class="slogan">함께 뛰는 즐거움, 다시 도전하는 용기!</div>
-    <p>한번 더 도전! 함께 뛰는 우리!.<br>교사·학생·학부모가 함께 즐기는 <span class="ras"><i>R</i><i>A</i><i>S</i></span> RAS 줄넘기 축제에 오신 것을 <span style="white-space:nowrap;">환영합니다!</span></p>
-  </div>
-</div>
+  <!-- 외부 라이브러리 없이 사용하는 SVG 아이콘 모음 -->
+  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true" style="position:absolute;overflow:hidden"><defs>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1Z"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7h.01"/></symbol>
+    <symbol id="i-jump" viewBox="0 0 24 24"><circle cx="13" cy="4" r="2"/><path d="m7 12 4-4 4 2 4-2M11 8l-2 7 4 2 3 5M9 15l-5 5M3 7c0 9 16 10 18-3"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M7 3v4M17 3v4M3 10h18M8 14h2M14 14h2M8 17h2"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-form" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 3.5h6M9 10h6M9 14h6M9 18h3"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><path d="M12 15V3M8 7l4-4 4 4M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20v-2a6 6 0 0 1 12 0v2zM17 5a3 3 0 0 1 0 6M18 14a5 5 0 0 1 3 5v1"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20 5a5 5 0 0 0-8 1 5 5 0 0 0-8-1C0 10 6 16 12 21c6-5 12-11 8-16Z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3 7 7 .8-5.3 4.7 1.6 7-6.3-3.6-6.3 3.6 1.6-7L2 9.8 9 9z"/></symbol>
+  </defs></svg>
 
-  <div class="top-body">
-  <div class="nums">
-    <div><b>🗓️10.31</b><span>토요일 14:00</span></div>
-    <div><b>🚶2km</b><span>걷기 코스</span></div>
-    <div><b>🏃‍♂️5km</b><span>달리기 코스</span></div>
+  <div class="page-top">
+    <div class="shell site-head">
+      <a class="brand" href="#home" aria-label="줄넘기 축제 메인으로">
+        <span class="brand-mark"><svg class="ico" aria-hidden="true"><use href="#i-jump"/></svg></span>
+        <span class="brand-label"><strong>2026 RAS 줄넘기 축제</strong><small>HWASEONG · OSAN</small></span>
+      </a>
+      <button id="shareBtn" class="share" type="button" aria-label="이 페이지 공유하기"><svg class="ico" aria-hidden="true"><use href="#i-share"/></svg> 공유</button>
+    </div>
   </div>
-  <div class="btns">
-    <details class="apply-fold">
-      <summary class="btn primary">슬로깅 참가 신청하기 <span class="arrow">▾</span></summary>
-      <div class="apply-choices">
-        <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeSH96eASG7K3Stfn5Dwf0tQEiA01Yh3XvTwhimtPf6dTSIZg/viewform?usp=dialog" target="_blank" rel="noopener">👨‍👩‍👧‍👦개인 신청자</a>
-        <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeuAJzhiDNSJtUPKcJmX1qJl5yR53lSQ2zFwMAsuJsjHzXaXQ/viewform?usp=publish-editor" target="_blank" rel="noopener">🏢관공서 관계자</a>
+
+  <div class="hero-shell" id="home">
+    <div class="hero">
+      <div class="shell hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow hero-kicker">2026 하반기 교육장배 학교스포츠클럽</span>
+          <p class="hero-slogan">함께 뛰는 즐거움, 다시 도전하는 용기!</p>
+          <h1>초등 교육가족<br><span class="highlight"><span class="ras">RAS</span> 줄넘기 축제</span></h1>
+          <p class="hero-desc">기록보다 소중한 건 도전하는 마음!<br>학생·학부모·교원이 함께 뛰고 서로를 응원하는 축제에 초대해요.</p>
+          <div class="hero-meta">
+            <span><svg class="ico" aria-hidden="true"><use href="#i-calendar"/></svg> 2026. 10. 31.(토) 14:00</span>
+            <span><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg> 동탄여울공원 축구장</span>
+          </div>
+          <div class="hero-actions">
+            <a class="action action-primary" href="#apply">참가 신청하기 <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="action action-ghost" href="#events">경기 종목 보기 <svg class="ico" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
+          </div>
+        </div>
+        <!-- CSS/벡터 기반 장식 그림: 별도 이미지 파일 없이 동작 -->
+        <div class="illustration" aria-hidden="true">
+          <svg viewBox="0 0 480 400" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="243" cy="353" rx="180" ry="20" fill="#0E3A9B" opacity=".23"/>
+            <path d="M48 250C23 98 133 30 255 54c111 22 170 108 170 201-6 82-117 118-225 102C112 344 62 316 48 250Z" fill="#5B91FF" opacity=".55"/>
+            <path d="M88 212C84 90 192 58 287 99c88 39 111 128 84 192" fill="none" stroke="#BFD9FF" stroke-width="4" stroke-dasharray="10 13" stroke-linecap="round" opacity=".75"/>
+            <path d="m75 88 9 21 22 2-17 14 5 23-19-12-18 12 4-23-17-14 22-2Z" fill="#FFD166"/>
+            <path d="m394 80 6 14 15 2-12 9 4 15-13-8-13 8 4-15-12-9 16-2Z" fill="#FFAC81"/>
+            <circle cx="404" cy="208" r="7" fill="#FFD166"/><circle cx="45" cy="294" r="6" fill="#FFB88B"/><circle cx="334" cy="46" r="4" fill="#FFFFFF"/>
+            <!-- rope arcs -->
+            <path d="M92 244C26 132 101 45 198 91c78 37 77 194 0 222" fill="none" stroke="#FFE49B" stroke-width="7" stroke-linecap="round"/>
+            <path d="M263 236C210 106 311 38 379 112c64 70 22 174-49 201" fill="none" stroke="#FFE49B" stroke-width="7" stroke-linecap="round"/>
+            <!-- left jumper student -->
+            <circle cx="158" cy="160" r="33" fill="#FFD5AF"/>
+            <path d="M126 158q-11-43 27-46c26-3 43 16 38 44-13-17-20-21-37-22-9 15-20 18-28 24Z" fill="#183D83"/>
+            <path d="M130 201q27-18 54-3l14 70-79-1Z" fill="#FF7043"/>
+            <path d="M126 211 97 244M185 213l31 28" stroke="#FFD5AF" stroke-width="16" stroke-linecap="round"/>
+            <path d="M140 266 112 307M175 266l27 41" stroke="#FFD5AF" stroke-width="18" stroke-linecap="round"/>
+            <path d="m112 306-20 14m109-13 21 13" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round"/>
+            <path d="M152 173h2m18 0h2" stroke="#714D41" stroke-width="4" stroke-linecap="round"/><path d="M154 184q8 8 17 0" fill="none" stroke="#B56F5B" stroke-width="2.5" stroke-linecap="round"/>
+            <!-- right jumper adult -->
+            <circle cx="310" cy="154" r="36" fill="#FFE0BD"/>
+            <path d="M277 156q-12-45 33-47 40 0 38 47-12-16-20-16-30 2-51 16Z" fill="#233863"/>
+            <path d="M280 197q34-18 62 4l13 72-88-2Z" fill="#FFD166"/>
+            <path d="M278 208 250 239M344 209l31 30" stroke="#FFE0BD" stroke-width="17" stroke-linecap="round"/>
+            <path d="m290 271-28 42m50-42 29 42" stroke="#FFE0BD" stroke-width="20" stroke-linecap="round"/>
+            <path d="m260 313-20 12m99-12 22 12" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round"/>
+            <path d="M297 166h2m24 0h2" stroke="#714D41" stroke-width="4" stroke-linecap="round"/><path d="M301 178q10 10 20 0" fill="none" stroke="#B56F5B" stroke-width="2.5" stroke-linecap="round"/>
+            <!-- legs are airborne; cheerful ground confetti -->
+            <path d="M94 344h45M357 346h31" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" opacity=".65"/>
+            <g transform="translate(283 60) rotate(-8)"><rect width="111" height="46" rx="22" fill="#FFFFFF"/><text x="55" y="30" text-anchor="middle" fill="#2764E7" font-size="23" font-weight="900" font-family="Arial,sans-serif">JUMP!</text></g>
+          </svg>
+        </div>
       </div>
-    </details>
-    <a class="btn volunteer" href="https://docs.google.com/forms/d/e/1FAIpQLSfbO_dxJxHNkbwCplxmgMgcsqYBZtRWU7oHlPsqYnG5Oyr3jw/viewform?usp=publish-editor" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#icon-heart"></use></svg> 학생 자원봉사단 지원하기</a>
-    <div class="quick-links"><a class="btn" href="#schedule"><svg class="icon" aria-hidden="true"><use href="#icon-calendar"></use></svg> 당일 일정 보기</a>
-    <a class="btn" href="#where"><svg class="icon" aria-hidden="true"><use href="#icon-pin"></use></svg> 오시는 길</a></div>
-  </div>
-  </div>
-</div>
-
-<div class="wrap">
-  <section id="poster">
-    <h2>공식 포스터</h2>
-    <img src="/poster-thumb.jpg?v=20261007"
-     alt="행사 공식 포스터"
-     style="width:100%;height:auto;display:block;margin:0 auto;">
-  </section>
-
-  <section id="about">
-    <h2>행사 개요</h2>
-    <div class="card"><dl>
-      <div class="row"><dt>행사명</dt><dd>2026 화성오산 초등 교육가족 <span class="ras"><i>R</i><i>A</i><i>S</i></span> RAS 줄넘기 축제</dd></div>
-      <div class="row"><dt>대상</dt><dd>화성오산 초등 교육가족 (교사, 학생, 학부모)</dd></div>
-      <div class="row"><dt>일시</dt><dd>2026. 10. 24.(토) 09:00</dd></div>
-      <div class="row"><dt>장소</dt><dd>동탄 여울공원 축구장 일대 (집합장소: 육상트랙 앞)</dd></div>
-      <div class="row"><dt>주최·주관</dt><dd>화성오산교육지원청</dd></div>
-      <div class="row"><dt>협조</dt><dd>화성시청</dd></div>
-    </dl></div>
-    <div class="card"><b>행사 의미</b><ul><li>교권 존중</li><li>교육가족 동행</li><li><span class="ras"><i>R</i><i>A</i><i>S</i></span> 교육 실현</li></ul><p style="margin:10px 0 0;font-size:14px;color:var(--sub)">교육 3주체가 걷고 달리며 교권 존중의 의미를 되새기고,<br>함께 <span class="ras"><i>R</i><i>A</i><i>S</i></span> 교육을 실현하는 행사입니다.</p></div>
-    <div class="card note"><b>슬로깅이란?</b><br>슬로우(slow)와 조깅(jogging)을 합친 말입니다.<br>기록을 다투지 않고, 교육가족이 다함께 여유를 갖고 천천히 달려 하나의 코스를 끝까지 완주하는 데 의미가 있어요.</div>
-  </section>
-
-  <section id="course">
-    <h2>슬로깅 코스</h2>
-    <div class="card course"><div class="course-top"><div class="km">2km</div><div><h3>걷기 코스</h3><p>선생님, 친구, 가족과 함께 편안하게 걸어요.</p></div></div><img class="course-img" src="images/course_2km.jpg" alt="2km 걷기 코스 지도" loading="lazy"></div>
-    <div class="card course"><div class="course-top"><div class="km">5km</div><div><h3>달리기 코스</h3><p>무리하지 않는 속도로 천천히 달려요.</p></div></div><img class="course-img" src="images/course_5km.jpg" alt="5km 달리기 코스 지도" loading="lazy"></div>
-  </section>
-
-  <section id="benefit">
-    <h2>참가 혜택과 준비물</h2>
-    <div class="card"><b><svg class="icon" aria-hidden="true"><use href="#icon-medal"></use></svg> 참가 혜택</b><ul><li>모바일 기록 인증서 발급</li><li>완주 메달 수여</li></ul></div>
-    <div class="card"><b>준비물</b><ul><li>편안한 복장</li><li>운동화</li></ul></div>
-  </section>
-
-  <section id="schedule">
-    <h2>당일 일정</h2>
-    <div class="card">
-      <ol class="timeline" aria-label="행사 시간 순서">
-        <li><time datetime="08:00">08:00 ~ 08:50</time><div class="timeline-content"><div class="ev">배번 및 기록 칩 배부</div></div></li>
-        <li><time datetime="08:50">08:50 ~ 09:00</time><div class="timeline-content"><div class="ev">집결(동탄여울공원 육상트랙 앞)</div></div></li>
-        <li><time datetime="09:00">09:00 ~ 09:20</time><div class="timeline-content"><div class="ev">식전행사(다원중 댄스동아리 더 모스트)</div><div class="ev">국민의례</div><div class="ev">내빈 인사말씀</div><div class="ev">교육장님 인사말씀</div></div></li>
-        <li><time datetime="09:20">09:20 ~ 09:30</time><div class="timeline-content"><div class="ev">준비운동 및 안전교육</div></div></li>
-        <li><time datetime="09:30">09:30 ~ 11:00</time><div class="timeline-content"><div class="ev">5km 달리기 → 2km 걷기 코스 순으로 출발</div></div></li>
-        <li><time datetime="11:00">11:00 ~ 11:30</time><div class="timeline-content"><div class="ev">페스타 마무리</div></div></li>
-      </ol>
     </div>
-  </section>
-
-<section id="where">
-  <h2>오시는 길</h2>
-
-  <div class="card">
-    <div class="place-name">동탄 여울공원 축구장</div><span class="address">경기도 화성시 동탄구 여울동 1060 일대</span>
-    <div class="meeting"><svg class="icon" aria-hidden="true"><use href="#icon-pin"></use></svg><div><strong>집합장소 · 육상트랙 앞</strong><small>행사 당일 집결 안내를 확인해 주세요.</small></div></div>
-
-    <dl style="margin-top:12px;font-size:14px;">
-      <div class="row"><dt><svg class="icon" aria-hidden="true"><use href="#icon-bus"></use></svg>대중교통</dt><dd style="flex:1;min-width:0;">GTX-A·SRT 동탄역 하차<br> → 동탄역(동측) 정류장에서 H101번·208번 이용<br> → ‘반도유보라6차’ 정류장 하차 후 도보 약 5~10분<br>※ H100번 이용 시 ‘동탄여울공원’ 정류장에서 바로 하차 가능</dd></div>
-      <div class="row"><dt><svg class="icon" aria-hidden="true"><use href="#icon-car"></use></svg>자가용</dt><dd style="flex:1;min-width:0;">내비게이션에 ‘동탄여울공원’ 검색</dd></div>
-      <div class="row"><dt><svg class="icon" aria-hidden="true"><use href="#icon-parking"></use></svg>주차</dt><dd style="flex:1;min-width:0;">동탄여울공원 공영주차장 이용</dd></div>
-    </dl>
-    <p class="note travel-note">※ 행사 당일 혼잡이 예상되므로 가급적 대중교통을 이용해 주세요.</p>
-
-    <div class="map-frame">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x357b45d2ae4e3cf5%3A0x2b4e63a4828aea0b!2z64-Z7YOE7Jes7Jq46rO17JuQ!5e0!3m2!1sko!2skr!4v1791127652641!5m2!1sko!2skr"
-        width="100%"
-        height="300"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="strict-origin-when-cross-origin">
-      </iframe>
+    <div class="shell quick-facts" aria-label="축제 주요 정보">
+      <div class="fact"><span class="fact-icon"><svg class="ico" aria-hidden="true"><use href="#i-calendar"/></svg></span><div><span class="fact-label">행사 날짜</span><div class="fact-value">10월 31일 (토)</div></div></div>
+      <div class="fact"><span class="fact-icon"><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg></span><div><span class="fact-label">시작 시간</span><div class="fact-value">오후 2시</div></div></div>
+      <div class="fact"><span class="fact-icon"><svg class="ico" aria-hidden="true"><use href="#i-users"/></svg></span><div><span class="fact-label">참가 대상</span><div class="fact-value">초등 교육가족</div></div></div>
     </div>
   </div>
 
-</section>
+  <main class="shell">
+    <section id="about" aria-labelledby="about-title">
+      <div class="section-heading"><span class="section-label">01 · ABOUT</span><h2 id="about-title">축제 안내</h2><p class="section-description">함께 도전하고 서로 응원하는 교육가족 줄넘기 축제!</p></div>
+      <div class="overview">
+        <div class="panel overview-main"><dl>
+          <div class="detail"><dt>행사명</dt><dd>2026 화성오산 초등 교육가족 RAS 줄넘기 축제</dd></div>
+          <div class="detail"><dt>일시</dt><dd>2026. 10. 31.(토) 14:00~16:00</dd></div>
+          <div class="detail"><dt>장소</dt><dd>동탄여울공원 축구장</dd></div>
+          <div class="detail"><dt>대상</dt><dd>화성오산 관내 초등학생, 학부모 및 교원</dd></div>
+          <div class="detail"><dt>규모</dt><dd>약 400명 (선착순 모집)</dd></div>
+          <div class="detail"><dt>운영</dt><dd>경기도화성오산교육지원청</dd></div>
+        </dl></div>
+        <div class="overview-side"><div><span class="heartline">TOGETHER, ONE MORE JUMP!</span><h3>잘 뛰는 것보다<br>함께 뛰는 마음이<br>더 빛나는 순간.</h3></div><div class="values"><span>#즐거운 참여</span><span>#용기 있는 도전</span><span>#따뜻한 응원</span></div></div>
+      </div>
+      <div class="value-cards">
+        <div class="value-card"><span class="circle"><svg class="ico" aria-hidden="true"><use href="#i-star"/></svg></span><strong>나에게 도전!</strong><p>자신의 목표를 향해 한 번 더 뛰어봐요.</p></div>
+        <div class="value-card"><span class="circle"><svg class="ico" aria-hidden="true"><use href="#i-heart"/></svg></span><strong>가족과 함께!</strong><p>호흡을 맞추고 서로 응원하며 즐겨요.</p></div>
+        <div class="value-card"><span class="circle"><svg class="ico" aria-hidden="true"><use href="#i-users"/></svg></span><strong>모두가 주인공!</strong><p>기록에 관계없이 참여와 노력을 격려해요.</p></div>
+      </div>
+    </section>
 
-  <section id="apply">
-    <h2>문의</h2>
-    <div class="card"><b>화성오산교육지원청 지역교육과 담당 장학사</b><br><a class="contact-number" href="tel:03161903043"><svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg>031) 6190-3043</a></div>
-  </section>
+    <section id="events" aria-labelledby="events-title">
+      <div class="section-heading"><span class="section-label">02 · EVENTS</span><h2 id="events-title">경기 종목</h2><p class="section-description">종목을 선택하면 경기 방식과 제한 시간을 확인할 수 있어요.</p></div>
+      <div class="tabs" role="tablist" aria-label="경기 구분">
+        <button type="button" class="tab" id="tab-solo" role="tab" aria-selected="true" aria-controls="panel-solo" data-tab="solo">학생 개인전</button>
+        <button type="button" class="tab" id="tab-family" role="tab" aria-selected="false" aria-controls="panel-family" data-tab="family" tabindex="-1">가족전</button>
+        <button type="button" class="tab" id="tab-team" role="tab" aria-selected="false" aria-controls="panel-team" data-tab="team" tabindex="-1">단체전</button>
+      </div>
+      <div class="panel event-panel" id="panel-solo" role="tabpanel" aria-labelledby="tab-solo">
+        <div class="event-top"><div><h3>나의 한계에 도전해요!</h3><p>1~6번 종목 → 패자부활전 → 7번 2중뛰기</p></div><span class="event-count">7종목</span></div>
+        <div class="events-grid">
+          <div class="event-item"><span class="event-number">01</span><div><div class="event-name">양발 모아 뛰기</div><p class="event-desc">두 발을 모아 함께 점프</p><span class="event-time">1분</span></div></div>
+          <div class="event-item"><span class="event-number">02</span><div><div class="event-name">양발 번갈아 뛰기</div><p class="event-desc">양발을 번갈아 들어 점프</p><span class="event-time">1분</span></div></div>
+          <div class="event-item"><span class="event-number">03</span><div><div class="event-name">엇걸어 뛰기</div><p class="event-desc">양팔을 교차하여 줄넘기</p><span class="event-time">20초</span></div></div>
+          <div class="event-item"><span class="event-number">04</span><div><div class="event-name">엇걸어 풀어 뛰기</div><p class="event-desc">팔을 교차했다 풀며 줄넘기</p><span class="event-time">20초</span></div></div>
+          <div class="event-item"><span class="event-number">05</span><div><div class="event-name">양발 앞뒤 흔들어 뛰기</div><p class="event-desc">두 발을 앞뒤로 바꾸며 점프</p><span class="event-time">20초</span></div></div>
+          <div class="event-item"><span class="event-number">06</span><div><div class="event-name">뒤로뛰기</div><p class="event-desc">줄을 반대 방향으로 돌려 점프</p><span class="event-time">20초</span></div></div>
+          <div class="event-item"><span class="event-number">07</span><div><div class="event-name">2중뛰기</div><p class="event-desc">한 번 점프에 줄을 두 번 통과</p><span class="event-time">시간 무제한</span></div></div>
+        </div>
+        <div class="event-note"><svg class="ico" aria-hidden="true"><use href="#i-info"/></svg><span>6번 뒤로뛰기까지 진행한 뒤 패자부활전을 실시하고, 이후 7번 2중뛰기를 진행해요.</span></div>
+      </div>
+      <div class="panel event-panel" id="panel-family" role="tabpanel" aria-labelledby="tab-family" hidden>
+        <div class="event-top"><div><h3>가족과 호흡을 맞춰요!</h3><p>학생과 학부모가 함께 참여하는 경기</p></div><span class="event-count">4종목</span></div>
+        <div class="events-grid">
+          <div class="event-item"><span class="event-number">01</span><div><div class="event-name">마주보고 함께 뛰기</div><p class="event-desc">마주 선 두 사람이 함께 점프</p><span class="event-time">1분</span></div></div>
+          <div class="event-item"><span class="event-number">02</span><div><div class="event-name">2인 옆으로 서서 함께 뛰기</div><p class="event-desc">나란히 서서 호흡을 맞춰 점프</p><span class="event-time">1분</span></div></div>
+          <div class="event-item"><span class="event-number">03</span><div><div class="event-name">2인 2줄 엇걸어 함께뛰기</div><p class="event-desc">각자의 줄을 활용해 함께 점프</p><span class="event-time">1분</span></div></div>
+          <div class="event-item"><span class="event-number">04</span><div><div class="event-name">2중 뛰기</div><p class="event-desc">세부 동작은 현장 안내를 확인해 주세요.</p><span class="event-time">시간 무제한</span></div></div>
+        </div>
+        <div class="event-note"><svg class="ico" aria-hidden="true"><use href="#i-info"/></svg><span>2개의 줄이 필요한 종목이 있으니 학생과 학부모 모두 줄넘기 1개씩 준비해 주세요.</span></div>
+      </div>
+      <div class="panel event-panel" id="panel-team" role="tabpanel" aria-labelledby="tab-team" hidden>
+        <div class="event-top"><div><h3>우리 모두 함께 뛰어요!</h3><p>12명 한 팀 · 줄잡이 2명과 참가자 10명</p></div><span class="event-count">2종목</span></div>
+        <div class="events-grid">
+          <div class="event-item"><span class="event-number">01</span><div><div class="event-name">긴줄 단체줄넘기</div><p class="event-desc">10명이 줄 안에서 동시에 뛰기</p><span class="event-time">시간 무제한</span></div></div>
+          <div class="event-item"><span class="event-number">02</span><div><div class="event-name">긴줄 8자 줄넘기</div><p class="event-desc">한 사람씩 들어갔다 나오며 뛰기</p><span class="event-time">2분</span></div></div>
+        </div>
+        <div class="event-note"><svg class="ico" aria-hidden="true"><use href="#i-info"/></svg><span>단체전은 현장에서 팀을 편성하며, 긴줄은 운영본부에서 제공해요.</span></div>
+      </div>
+      <div class="panel rules"><h3>참가 전 꼭 확인해 주세요</h3><ul class="rule-list">
+        <li>모든 참가자는 운동화를 착용해 주세요.</li>
+        <li>개인전·가족전 줄은 개인별로 지참해 주세요.</li>
+        <li>줄이 몸에 닿아도 정상적으로 넘어가면 성공으로 인정해요.</li>
+        <li>현장 진행요원과 심판의 안내에 따라 안전하게 참여해 주세요.</li>
+      </ul></div>
+    </section>
 
-  <footer>주최·주관 화성오산교육지원청<br>협조 화성시청<br>© 2026 화성오산교육지원청</footer>
-</div>
+    <section id="schedule" aria-labelledby="schedule-title">
+      <div class="section-heading"><span class="section-label">03 · TIMELINE</span><h2 id="schedule-title">행사 일정</h2><p class="section-description">오후 2시부터 약 2시간 동안 함께해요.</p></div>
+      <div class="panel schedule-card"><ol class="timeline">
+        <li><time datetime="13:50">13:50 ~ 14:00</time><div><strong>참가자 집결</strong><p>축제 장소에 모여 주세요.</p></div></li>
+        <li><time datetime="14:00">14:00 ~ 14:05</time><div><strong>시범공연</strong><p>줄넘기 축제의 시작!</p></div></li>
+        <li><time datetime="14:05">14:05 ~ 14:15</time><div><strong>인사말 · 안전교육 · 준비운동</strong><p>몸을 풀고 안전하게 시작해요.</p></div></li>
+        <li><time datetime="14:15">14:15 ~ 14:40</time><div><strong>학생 개인전</strong><p>6종목 → 패자부활전 → 2중뛰기</p></div></li>
+        <li><time datetime="14:40">14:40 ~ 15:00</time><div><strong>가족전</strong><p>학생과 학부모가 함께 도전!</p></div></li>
+        <li><time datetime="15:00">15:00 ~ 15:10</time><div><strong>이벤트 경기</strong><p>교원·학부모 개인전</p></div></li>
+        <li><time datetime="15:10">15:10 ~ 15:30</time><div><strong>단체전</strong><p>긴줄 단체줄넘기 · 긴줄 8자 줄넘기</p></div></li>
+        <li><time datetime="15:30">15:30 ~ 15:40</time><div><strong>특별 이벤트</strong><p>다 함께 즐기는 축제 시간</p></div></li>
+        <li><time datetime="15:40">15:40 ~ 16:00</time><div><strong>정리 및 마무리</strong><p>오늘의 도전과 노력을 서로 응원해요.</p></div></li>
+      </ol></div>
+      <p class="schedule-hint">※ 진행 상황에 따라 세부 시간은 조정될 수 있어요.</p>
+    </section>
 
-<div id="toast" class="toast" role="status" aria-live="polite"></div>
-<nav aria-label="바로가기">
-  <a href="#home" class="active" aria-current="location"><svg class="icon" aria-hidden="true"><use href="#icon-home"></use></svg><span>홈</span></a>
-  <a href="#about"><svg class="icon" aria-hidden="true"><use href="#icon-info"></use></svg><span>개요</span></a>
-  <a href="#course"><svg class="icon" aria-hidden="true"><use href="#icon-run"></use></svg><span>코스</span></a>
-  <a href="#schedule"><svg class="icon" aria-hidden="true"><use href="#icon-calendar"></use></svg><span>일정</span></a>
-  <a href="#where"><svg class="icon" aria-hidden="true"><use href="#icon-pin"></use></svg><span>오시는 길</span></a>
-</nav>
-<script>
-(function(){
-  var TOTAL_DURATION=4500;            /* 학생예술제와 동일: 전체 5초 */
-  var TITLE_LINES=['화성오산 초등 교육가족','RAS RAS 줄넘기 축제'];
-  var SLOGAN='함께 뛰는 즐거움, 다시 도전하는 용기!';
-  var TITLE_MS_PER_CHAR=75;           /* 학생예술제 제목: 10글자 750ms */
-  var SLOGAN_MS_PER_CHAR=37.5;        /* 학생예술제 부제: 32글자 1200ms */
-  var PAUSE_BETWEEN=300;              /* 제목과 부제 사이 0.3초 */
-  var elS=document.getElementById('splash'),elT=document.getElementById('introTitle'),elSub=document.getElementById('introSubtitle'),elC=document.getElementById('introCursor');
-  if(!elS)return;
-  var start=Date.now();
-  function wait(ms){return new Promise(function(r){setTimeout(r,ms)})}
-  function typeInto(el,text,perChar){
-    return new Promise(function(resolve){
-      var chars=Array.from(text),i=0,cur=null,wrap=null,at=text.indexOf('RAS');
-      var timer=setInterval(function(){
-        var ch=chars[i];
-        if(at>=0&&i>=at&&i<at+3){
-          if(i===at){wrap=document.createElement('span');wrap.className='ras';el.appendChild(wrap);cur=null;}
-          var l=document.createElement('i');l.textContent=ch;wrap.appendChild(l);
-        }else{
-          if(!cur){cur=document.createTextNode('');el.appendChild(cur);}
-          cur.data+=ch;
+    <section id="where" aria-labelledby="where-title">
+      <div class="section-heading"><span class="section-label">04 · LOCATION</span><h2 id="where-title">오시는 길</h2><p class="section-description">행사장을 미리 확인하고 편안하게 방문해 주세요.</p></div>
+      <div class="location-grid">
+        <div class="panel location-info"><div><span class="location-kicker">FESTIVAL LOCATION</span><h3>동탄여울공원 축구장</h3><p>경기도 화성시 동탄여울공원 내 축구장</p><div class="location-links">
+          <a class="map-link" href="https://map.naver.com/p/search/%EB%8F%99%ED%83%84%EC%97%AC%EC%9A%B8%EA%B3%B5%EC%9B%90%20%EC%B6%95%EA%B5%AC%EC%9E%A5" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg> 네이버 지도</a>
+          <a class="map-link" href="https://map.kakao.com/?q=%EB%8F%99%ED%83%84%EC%97%AC%EC%9A%B8%EA%B3%B5%EC%9B%90%20%EC%B6%95%EA%B5%AC%EC%9E%A5" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-arrow-up"/></svg> 카카오맵</a>
+        </div></div></div>
+        <div class="map-box"><iframe title="동탄여울공원 축구장 위치 지도" src="https://www.google.com/maps?q=%EB%8F%99%ED%83%84%EC%97%AC%EC%9A%B8%EA%B3%B5%EC%9B%90%20%EC%B6%95%EA%B5%AC%EC%9E%A5&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+      </div>
+      <p class="location-note">※ 세부 집결 위치와 현장 이동 동선은 행사 안내에 따라 확인해 주세요.</p>
+    </section>
+
+    <section id="apply" aria-labelledby="apply-title">
+      <div class="section-heading"><span class="section-label">05 · JOIN US</span><h2 id="apply-title">참가 신청</h2><p class="section-description">교육가족 여러분의 즐거운 도전을 기다리고 있어요!</p></div>
+      <div class="panel apply-card">
+        <span class="apply-title"><svg class="ico" aria-hidden="true"><use href="#i-form"/></svg> 2026 RAS JUMP FESTA</span>
+        <h3>함께 뛰는 즐거움,<br>지금 신청해 보세요!</h3>
+        <p>신청은 구글 폼을 통해 진행될 예정이에요.</p>
+        <div class="apply-meta"><span>신청 기간 · 10. 14.(수) ~ 10. 21.(수) 17:00</span><span>선착순 400명</span></div>
+        <button type="button" class="apply-button" id="applyButton">구글 폼으로 참가 신청 <svg class="ico" aria-hidden="true"><use href="#i-arrow-up"/></svg></button>
+        <small class="pending" id="applyStatus" aria-live="polite">참가 신청 링크는 추후 연결될 예정입니다.</small>
+      </div>
+      <p class="contact">행사 문의 · 화성오산교육지원청 지역교육과 <a href="tel:03161903043">031-6190-3043</a></p>
+    </section>
+  </main>
+
+  <footer class="shell">함께 뛰는 즐거움, 다시 도전하는 용기!<br>경기도화성오산교육지원청 · 2026 RAS 줄넘기 축제</footer>
+
+  <nav class="bottom-nav" aria-label="페이지 바로가기"><div class="nav-items">
+    <a href="#home" class="active" aria-current="location"><svg class="ico" aria-hidden="true"><use href="#i-home"/></svg><span>메인화면</span></a>
+    <a href="#about"><svg class="ico" aria-hidden="true"><use href="#i-info"/></svg><span>축제 안내</span></a>
+    <a href="#events"><svg class="ico" aria-hidden="true"><use href="#i-jump"/></svg><span>경기 종목</span></a>
+    <a href="#schedule"><svg class="ico" aria-hidden="true"><use href="#i-calendar"/></svg><span>행사 일정</span></a>
+    <a href="#where"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg><span>오시는 길</span></a>
+    <a href="#apply"><svg class="ico" aria-hidden="true"><use href="#i-form"/></svg><span>참가 신청</span></a>
+  </div></nav>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+  /* ==========================================================
+     참가 신청 폼 연결: 아래 따옴표 안에 구글 폼 신청 주소만 넣으세요.
+     예) const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/.../viewform';
+     ========================================================== */
+  const GOOGLE_FORM_URL = '';
+
+  (() => {
+    const toastEl = document.getElementById('toast');
+    let toastTimer;
+    function toast(message) {
+      toastEl.textContent = message;
+      toastEl.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => toastEl.classList.remove('show'), 2800);
+    }
+    const applicationUrl = GOOGLE_FORM_URL.trim();
+    const applyStatus = document.getElementById('applyStatus');
+    if (applicationUrl) applyStatus.textContent = '버튼을 누르면 구글 폼 신청 페이지가 새 창으로 열립니다.';
+    document.getElementById('applyButton').addEventListener('click', () => {
+      if (!applicationUrl) { toast('참가 신청 링크를 준비 중이에요.'); return; }
+      try {
+        const link = new URL(applicationUrl);
+        if (!['https:', 'http:'].includes(link.protocol)) throw new Error('Invalid URL');
+        window.open(link.href, '_blank', 'noopener,noreferrer');
+      } catch (error) { toast('신청 링크를 확인해 주세요.'); }
+    });
+
+    const tabs = [...document.querySelectorAll('[role="tab"]')];
+    function activateTab(nextTab, moveFocus = false) {
+      tabs.forEach(tab => {
+        const selected = tab === nextTab;
+        tab.setAttribute('aria-selected', String(selected));
+        tab.tabIndex = selected ? 0 : -1;
+        document.getElementById(tab.getAttribute('aria-controls')).hidden = !selected;
+      });
+      if (moveFocus) nextTab.focus();
+    }
+    tabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => activateTab(tab));
+      tab.addEventListener('keydown', event => {
+        let targetIndex;
+        if (event.key === 'ArrowRight') targetIndex = (index + 1) % tabs.length;
+        else if (event.key === 'ArrowLeft') targetIndex = (index + tabs.length - 1) % tabs.length;
+        else if (event.key === 'Home') targetIndex = 0;
+        else if (event.key === 'End') targetIndex = tabs.length - 1;
+        else return;
+        event.preventDefault();
+        activateTab(tabs[targetIndex], true);
+      });
+    });
+
+    const navigation = [...document.querySelectorAll('.bottom-nav a')];
+    const targets = navigation.map(link => document.querySelector(link.getAttribute('href')));
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function setActive(index) {
+      navigation.forEach((link, i) => {
+        link.classList.toggle('active', i === index);
+        if (i === index) link.setAttribute('aria-current','location');
+        else link.removeAttribute('aria-current');
+      });
+    }
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', event => {
+        const target = document.querySelector(link.getAttribute('href'));
+        if (!target) return;
+        event.preventDefault();
+        target.scrollIntoView({behavior: reducedMotion ? 'instant' : 'smooth', block: 'start'});
+        const index = targets.indexOf(target);
+        if (index >= 0) setActive(index);
+        if (history.replaceState) history.replaceState(null, '', '#' + target.id);
+      });
+    });
+    let scrollQueued = false;
+    function updateActive() {
+      let current = 0;
+      targets.forEach((target, i) => {
+        if (target && target.getBoundingClientRect().top <= Math.min(170, window.innerHeight * .34)) current = i;
+      });
+      // 맨 아래까지 스크롤했을 때 마지막 탭 선택
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 18) current = navigation.length - 1;
+      setActive(current);
+      scrollQueued = false;
+    }
+    window.addEventListener('scroll', () => {
+      if (!scrollQueued) {scrollQueued = true; requestAnimationFrame(updateActive);}
+    }, {passive:true});
+    window.addEventListener('resize', updateActive);
+    updateActive();
+
+    document.getElementById('shareBtn').addEventListener('click', async () => {
+      const data = {title:'2026 화성오산 초등 교육가족 RAS 줄넘기 축제', text:'함께 뛰는 즐거움, 다시 도전하는 용기! | 2026. 10. 31.(토) 14:00 · 동탄여울공원 축구장', url:location.href};
+      if (navigator.share) {
+        try { await navigator.share(data); } catch (e) { if(e.name !== 'AbortError') toast('공유를 완료하지 못했어요.'); }
+        return;
+      }
+      try {
+        if (navigator.clipboard && window.isSecureContext) await navigator.clipboard.writeText(data.url);
+        else {
+          const textArea = document.createElement('textarea');
+          textArea.value = data.url; textArea.style.position='fixed';textArea.style.opacity='0';
+          document.body.appendChild(textArea); textArea.select();
+          const ok = document.execCommand('copy'); textArea.remove();
+          if (!ok) throw new Error('copy failed');
         }
-        i++;
-        if(i>=chars.length){clearInterval(timer);resolve();}
-      },perChar);
+        toast('페이지 링크를 복사했어요.');
+      } catch { toast('주소창의 링크를 직접 복사해 주세요.'); }
     });
-  }
-  function dismiss(){
-    elC.classList.add('hidden');
-    elS.classList.add('fade-out');
-    setTimeout(function(){elS.style.display='none'},900);
-  }
-  async function run(){
-    for(var i=0;i<TITLE_LINES.length;i++){
-      await typeInto(elT,TITLE_LINES[i],TITLE_MS_PER_CHAR);
-      if(i<TITLE_LINES.length-1)elT.appendChild(document.createElement('br'));
-    }
-    await wait(PAUSE_BETWEEN);
-    await typeInto(elSub,SLOGAN,SLOGAN_MS_PER_CHAR);
-    setTimeout(dismiss,Math.max(TOTAL_DURATION-(Date.now()-start),400));
-  }
-  if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches){
-    elT.innerHTML=TITLE_LINES.join('<br>').replace('RAS','<span class="ras"><i>R</i><i>A</i><i>S</i></span>');elSub.textContent=SLOGAN;setTimeout(dismiss,1800);
-  }else{
-    (document.fonts&&document.fonts.ready?document.fonts.ready:Promise.resolve()).then(run,run);
-  }
-})();
-(function(){
-  var btn=document.getElementById('shareBtn'),toast=document.getElementById('toast'),timer;
-  function showToast(msg){
-    toast.textContent=msg;toast.classList.add('show');
-    clearTimeout(timer);timer=setTimeout(function(){toast.classList.remove('show')},2300);
-  }
-  function copyText(text){
-    if(navigator.clipboard&&navigator.clipboard.writeText){
-      return navigator.clipboard.writeText(text);
-    }
-    return new Promise(function(resolve,reject){
-      var ta=document.createElement('textarea');ta.value=text;ta.style.position='fixed';ta.style.opacity='0';
-      document.body.appendChild(ta);ta.select();
-      var ok=false;try{ok=document.execCommand('copy')}catch(e){}
-      document.body.removeChild(ta);ok?resolve():reject();
-    });
-  }
-  btn.addEventListener('click',function(){
-    var data={
-      title:'2026 화성오산 초등 교육가족 RAS RAS 줄넘기 축제',
-      text:'함께 뛰는 즐거움, 다시 도전하는 용기! | 2026.10.24.(토) 09:00 동탄여울공원 일대\nRAS RAS 줄넘기 축제 참가 안내를 확인해 보세요!',
-      url:window.location.href
-    };
-    if(navigator.share){
-      navigator.share(data).catch(function(){});
-    }else{
-      copyText(data.url).then(function(){showToast('링크가 복사되었습니다.')},function(){showToast('복사하지 못했어요. 주소창의 링크를 직접 복사해 주세요.')});
-    }
-  });
-})();
-(function(){
-  var links=Array.from(document.querySelectorAll('nav a'));
-  var targets=links.map(function(link){return document.querySelector(link.getAttribute('href'))});
-  function markCurrent(){
-    var current=0;
-    targets.forEach(function(target,index){if(target&&target.getBoundingClientRect().top<=150)current=index});
-    links.forEach(function(link,index){link.classList.toggle('active',index===current);if(index===current)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current')});
-  }
-  var queued=false;
-  window.addEventListener('scroll',function(){if(queued)return;queued=true;requestAnimationFrame(function(){markCurrent();queued=false})},{passive:true});
-  markCurrent();
-})();
-document.getElementById("splash").onclick=function(){this.style.display="none"};
-</script>
+  })();
+  </script>
 </body>
 </html>
